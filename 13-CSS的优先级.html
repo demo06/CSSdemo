@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS的优先级</title>
+    <link rel="stylesheet" href="css/demo01.css">
+    <style>
+        /* 1.CSS样式的优先级 */
+
+        /* 内联样式>嵌入样式>外部引用样式>继承样式>默认样式 */
+
+        /* 继承样式和默认样式之中<a>标签的样式不受上述影响 */
+
+        /* CSS样式还遵循就近原则 */
+
+        /* 2.嵌入样式和外部引用中的优先级 */
+
+        /* ID > 类(伪类) > 标签 > 继承 > 默认 */
+
+        body {
+            color: red;
+        }
+
+        p.pclz {
+            color: green;
+            font-size: 50px;
+        }
+
+        #pbq {
+            font-size: 30px;
+        }
+        .pclz{
+            font-size: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="pbq" class="pclz " style="color:blue;">这是一个段落</p>
+</body>
+
+</html>
