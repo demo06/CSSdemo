@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>复合选择器</title>
+    <style>
+        dd.carnews {
+            color: #000;
+        }
+        li.news{
+        background-color: blue
+        }
+        li#index{
+            font-weight: bold;
+        }
+        .znews li a{
+            color: red;
+        }
+        html,body,ul,dl,dt,dd{
+            padding: 0;
+            margin: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li id="index">
+            <a href="#"> 首页</a>
+        </li>
+        <li>
+            <a href="#"> 产品</a>
+        </li>
+        <li class="news">
+            <a href="#"> 新闻</a>
+        </li>
+        <li>
+            <a href="#"> 售后</a>
+        </li>
+        <li>
+            <a href="#"> 关于</a>
+        </li>
+    </ul>
+
+    <ul class="znews">
+        <li>
+            <a href="#"> 习近平要求广大干部夯实“四基” 站稳人民立场的根基</a>
+        </li>
+        <li>
+            <a href="#"> 关于新时代中阿关系 习近平这样说</a>
+        </li>
+        <li>
+            <a href="#"> 央企高质量发展迈出坚实步伐 加快推进IPv6规模部署</a>
+        </li>
+        <li>
+            <a href="#"> 世贸组织总干事:中国是协商一分子 留住“乡愁”</a>
+        </li>
+        <li>
+            <a href="#"> 住建部：各地要因地制宜推进棚改货币化安置</a>
+        </li>
+    </ul>
+    <dl class="carnews">
+        <dt>
+            <a href="#"> 汽车</a>
+        </dt>
+        <dd>
+            <a href="#"> 大众途观L新车型实车曝光搭1.4T</a>
+        </dd>
+        <dd>
+            <a href="#"> 名爵全新SUV-HS官图发布9月上市</a>
+        </dd>
+        <dd>
+            <a href="#"> 宝马全新3系10月亮相换全新平台</a>
+        </dd>
+    </dl>
+    <dl class="yule">
+        <dt>
+            <a href="#"> 娱乐</a>
+        </dt>
+        <dd>
+            <a href="#"> 汪小菲维护大S呼吁男女平等</a>
+        </dd>
+        <dd>
+            <a href="#"> 刘涛生日王珂变玩偶暖心示爱</a>
+        </dd>
+        <dd>
+            <a href="#"> 何洁无奈发文称微信被人冒充</a>
+        </dd>
+    </dl>
+</body>
+
+</html>
