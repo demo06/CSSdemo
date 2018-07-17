@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS特性:层叠性,继承性</title>
+    <style>
+        /* 层叠性:同一优先级下,第二次设置的颜色会覆盖第一次设置的颜色 */
+
+        p {
+            color: rebeccapurple;
+            font-size: 40px;
+        }
+
+        p {
+            color: chartreuse;
+        }
+
+        /* 继承性 :父容器设置的样式,子容器也可以享受同等待遇 */
+        /* A标签继承父容器的样式需要重新定义 */
+        a {
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        CSS特性练习
+        <br>
+        <span>这是一个要继承的span标签</span>
+        <a href="#">这是一个A标签</a>
+    </p>
+    <span>这是一个想继承却没办法继承的span标签</span>
+</body>
+
+</html>
