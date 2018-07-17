@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>伪元素选择器</title>
+    <style>
+        body {
+            font-size: 24px;
+        }
+
+        p:first-child {
+            color: blueviolet;
+        }
+
+        p::first-letter {
+            stroke: blue;
+            font-size: 60px;
+        }
+
+        p::first-line {
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        据浙江海事局7月16日报道，根据部队年度例行性训练计划安排，定于2018年7月18日上午8：00至7月23日下午6：00，在象山至温州以东海域组织实际使用武器训练，禁航禁渔海域为以下9点按序连成的海域（2000中国大地坐标系）：
+    </p>
+</body>
+
+</html>
