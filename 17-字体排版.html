@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>字体排版</title>
+    <style>
+        /* chrome浏览器默认的字体大小像素是16px */
+
+        p {
+            /* 1em=16px */
+            font-size: 2em;
+            font-family: "宋体";
+        }
+
+        #p2 {
+            font-size: 32px;
+            font-weight: bolder;
+            font-style: oblique;
+            /* font-family: Verdana, Geneva, Tahoma, sans-serif ,"黑体2","楷体";
+            当首页字体不存在时,使用下一个 */
+        }
+
+        #p3 {
+            font-size: x-small;
+            font-style: italic;
+        }
+
+        /* font属性针对于字体样式进行综合设置,基本语法格式如下:*/
+        /*选择器{font:font-style font-weight font-size/line-height font-family;} */
+        /* 属性顺序必须按照上述顺序书写,各个属性以空格隔开 */
+        /* 其中不需要设置的属性可以省略(取默认值)*/
+        /* 但必须保留font-size和font-family属性,否则font属性不起作用 */
+
+        */ #p4 {
+            font: normal bold 4em/20px "仿宋";
+        }
+    </style>
+</head>
+<!-- chrome中控制台, console,escape方法可以转换unicode编码 -->
+
+<body>
+    <p>
+        金正恩视察朝鲜新造战舰 亲自体验海上试航(图) 美国再出震惊世人事件 完全超出正常人想象 奖励生育真来了 这省率先提出对生二孩家庭以奖励
+    </p>
+    <p id="p2">
+        i am a english; 挂牌3个月的国务院新部门不留情面点名：无法无天 “特普会”发言被骂惨 特朗普急回应：昨天我口误</p>
+    <p id="p3">
+        香港人在台湾叹差距大:高雄起薪连香港一半都不到
+    </p>
+
+    <p id="p4">姿态很快就是否看看就</p>
+</body>
+
+</html>
