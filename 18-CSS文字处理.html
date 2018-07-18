@@ -10,6 +10,8 @@
         /* 正字间距 */
         #p1 {
             letter-spacing: 10px;
+            line-height: 3;/*3倍行高(可设置倍数,也可设置像素)*/
+            font:normal normal  2em/3 "SimSun";
         }
 
         /* 负字间距 */
@@ -20,6 +22,13 @@
         /* 单词间距 */
         #p3 {
             word-spacing: 30px;
+        }
+
+        div{
+            border: 2px solid rebeccapurple;
+            height: 50px;
+            line-height: 50px;/*文字垂直居中对齐*/
+            text-align: center;/*文字水平居中对齐*/
         }
     </style>
 </head>
@@ -42,6 +51,8 @@
         <br>
         <span> 我喜欢玩 游戏</span>
     </p>
+
+    <div>我在学新东西</div>
 </body>
 
 </html>

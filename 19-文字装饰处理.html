@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>文字装饰</title>
+    <style>
+        /* 去掉下划线 */
+
+        /*设置下划线为none(没有装饰)*/
+
+        /*none:没有装饰   underline:加下划线   line-through:删除线*/
+
+        ul>li>a {
+            text-decoration: none;
+        }
+
+        s {
+            /*去掉删除线*/
+            text-decoration: none;
+        }
+
+        #p1 {
+            /* 添加下划线和删除线 */
+            text-decoration: underline line-through;
+            /*首行缩进两个字(1em=16px,一个字符正常大小为16px)*/
+            text-indent: 2em;
+
+        }
+
+        .p2 {
+            /*空白符处理: 
+                -normal:常规(默认),空格空行无效,满行自动换行
+                -pre:预格式化,按原样显示
+                -nowrap:空格空行无效,强制文本不能换行,除非遇到换行标记
+                        */
+            white-space: pre;
+            text-decoration: none;
+        }
+
+        #p3 {
+            white-space: nowrap;
+            text-decoration: none;
+            border: 1px solid #000;
+            width: 100px;
+            height: 100px;
+            /*将超出的部分隐藏掉*/
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <a href="#">习近平这样讲述金砖合作之道</a>
+        </li>
+        <li>
+            <a href="#">习近平眼里的“第一资源”为何如此重要</a>
+        </li>
+        <li>
+            <a href="#">习近平指引信访工作安民之道</a>
+        </li>
+    </ul>
+
+    <s>删除线</s>
+
+    <p id="p1">这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落这是一个段落</p>
+    <p class="p2">
+        var i=19; 
+        var m=i*9; 
+                    console.log(m);
+    </p>
+
+    <p id="p3">这是一个段落这是 一个段落这是一个段落这是一个段 落这是一个段落这是 一个段落这是一个段落这是 一个段落这是一个段落这是一个段落这是一个段落这 是一个段落</p>
+</body>
+
+</html>
