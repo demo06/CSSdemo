@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>三栏居中布局案例</title>
+    <style>
+        body,
+        div {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            border: 1px solid #000;
+
+        }
+
+        .a1,
+        .a5,
+        .center {
+            margin: 0 auto;
+            width: 960px;
+        }
+
+        .a2,
+        .a3,
+        .a4 {
+            float: left;
+        }
+
+        .a2 ,.a3 {
+            width: 100px;
+            height: 400px;
+        }
+
+       
+
+        .a4 {
+            width: 754px;
+        }
+
+        .a5 {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a1">导航</div>
+    <div class="center">
+        <div class="a2">左侧</div>
+        <div class="a4">中间</div>
+        <div class="a3">右侧</div>
+    </div>
+    <div class="a5">底部</div>
+</body>
+
+</html>
