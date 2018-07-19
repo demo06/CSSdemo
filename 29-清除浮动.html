@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>清除浮动</title>
+    <style>
+    div{
+        border: 1px solid #000;
+        
+    }
+    .fl{
+        background-color: saddlebrown;
+        width: 200px;
+        height: 450px;
+        float: left;
+    }
+    .fr{
+        background-color: magenta;
+        width: 200px;
+        height: 200px;
+        float: right;
+    }
+    .foot{
+       height: 50px;
+       /* 左右两边都不能有浮动的布局 */
+       clear: both;
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="fl"></div>
+    <div class="fr"></div>
+    <div class="foot"></div>
+</body>
+</html>
