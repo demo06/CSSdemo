@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>边框</title>
+    <style>
+        div {
+            width: 400px;
+            height: 400px;
+
+            /* 推荐使用 */
+            border: 20px solid palegreen;
+
+            /* 当边框确实有不相同的情况的时候使用 */
+            /* border-style: solid;
+            border-color: blueviolet;
+            border-width: 30px; */
+            /* 不建议使用:控制到具体的边框,效率低,兼容性差 */
+            /* border-top-color: gold;
+            border-bottom-width: 50px;
+            border-right-style: double; */
+            /* 设置一个参数,所有边框都享受这个设置; */
+            border-color: red;
+            /* 设置两个参数的时候,第一个参数是设置上下,第二个参数是左右 */
+            border-color: burlywood pink;
+            /* 上黄,下绿,左右黑 */
+            /* border-color: yellow black green; */
+            /* 四个参数:上  右  下  左 (依次按顺时针方向操作)*/
+            border-color: red green blue black;
+        }
+
+        table {
+            border: 5px solid cadetblue;
+            /* 设置表格边框为细线 */
+            border-collapse: collapse;
+        }
+        input{
+            /* 外线 */
+            outline-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>我是div</div>
+    <br>
+    <br>
+    <input type="text">
+
+    <br>
+    <br>
+    <table border="1">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+    </table>
+</body>
+
+</html>

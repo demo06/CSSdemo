@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>外边距</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            background-color: bisque;
+        }
+
+        #a1 {
+            /* margin: 100px;
+            margin: 100px 80px;
+            margin: 100px 80px 50px; */
+            margin: 100px 80px 50px 30px;
+
+            /* 外边距让div居中 */
+            /* 上下外边距为0 ,左右外边距自动计算 */
+            margin: 0 auto;
+
+/* 网站一般都会吧所有的内边距外边距都设置为0,方便开发人员依照设计稿开发 */
+/* html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img{margin:0;padding:0} */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="a1"></div>
+    <div id="a2"></div>
+</body>
+
+</html>
