@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>父容器高度塌陷</title>
+    <style>
+        div {
+
+            border: 1px solid #000;
+            /* 解决高度塌陷问题 */
+            overflow: hidden;
+        }
+
+        .child {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            float: left;
+        }
+
+        p {
+            border: 1px solid firebrick;
+            width: 150px;
+            height: 150px;
+
+            /* 超出部分隐藏 */
+            overflow: hidden;
+            /* 超出部分显示 */
+            overflow: visible;
+            /* 超出部分生成滚动条 */
+            overflow: auto;
+            /* 不管超出不超出都有滚动条 */
+            overflow: scroll;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+
+    <p>按时间快点哈四大皆空和大家卡河的就卡死安徽贷记卡好的ask黄金分割四大佛教石窟就是反抗集散地和方式比较恐怖女模和科技市康师傅上的卡号发深刻搭街坊和上的卡号发十大科技回复会计师大后方深刻搭街坊和雕塑回复i我恢复和复合时空哈弗空间数据库说的话u此时文昌我i吃u无车无储物空间课程计划uiw和五次和为此u</p>
+</body>
+
+</html>
