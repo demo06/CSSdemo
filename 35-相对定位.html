@@ -20,18 +20,60 @@
         .rl {
             width: 100px;
             height: 100px;
+            /* 相对于原来的位置进行偏移 */
             /* 设置了相对定位之后,标签的CSS就可以设置left,right,top,bottom的CSS的属性 */
             position: relative;
 
+            /* 相对于元素原来的位置,左移动10像素 */
+            left: 20px;
+            /* 相对于元素正常文档流的位置顶部20像素 */
+            top: 50px;
+
         }
 
-        /* 相对于原来的位置进行偏移 */
+        .a {
+            position: absolute;
+            height: 100px;
+            width: 200px;
+            background-color: cadetblue;
+            left: 100px;
+            top: 20px;
+        }
+
+        .p {
+            width: 400px;
+            height: 500px;
+            background-color: gold;
+            /* 如果父容器设置了relative后,那么它的子元素如果设置了absolute定位,那么它的子元素就按照父容器进行绝对定位 */
+            /* 子绝父相:子元素绝对定位,父元素一定要设置为相对定位 */
+            position: relative;
+        }
+
+        .f {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background-color: #09c;
+        }
     </style>
 </head>
 
 <body>
     <div class="rl">
-        我是DIV
+        相对定位
+    </div>
+
+    <div class="p">
+        相对定位
+        <div class="a">
+            绝对定位
+        </div>
+    </div>
+
+    <div class="f">
+        固定定位
     </div>
 </body>
 
