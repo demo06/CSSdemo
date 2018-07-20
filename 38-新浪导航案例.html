@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>导航首页练习</title>
+    <style>
+        body,div,ul,li{
+            margin: 0;padding: 0;
+        }
+        body{
+            font: 12px/20px "微软雅黑";
+            color: #4c4c4c;
+        }
+        /* 去掉列表的样式 */
+        ul,li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: #4c4c4c;
+        }
+
+         /* 最外部盒子布局 */
+         .nav{
+            border-top: 4px solid #ff8850;
+            border-bottom: 1px solid #edeef0;
+            height: 42px;
+            line-height: 42px;
+        }
+        .nav-main{
+            margin: 0 auto;
+            width: 960px;
+        }
+        /* 处理左侧列表 */
+        .nav-left-li{
+            float: left;
+        }
+        .nav-left-li li{
+            float: left;
+            padding: 0 15px;
+        }
+        /* 当鼠标移动上来的时候,背景色变灰色,字体颜色变黄色 */
+        .nav-left-li li:hover, .nav-left-li li:hover a{
+            background-color: #edeef0;
+            color: #ff8850;
+        }
+        /* 处理右侧列表 */
+        .nav-right-li{
+            float: right;
+        }
+        /* ul标签的子集li标签设置浮动,确保在下一层的子集不会受到影响 */
+        .nav-right-li>li{
+            float: left;
+            padding: 0 15px;
+        }
+
+        .nav-right-li>li:hover, .nav-right-li>li>a:hover{
+            background-color: #edeef0;
+            color: #ff8850;
+        }
+        /* 弹出菜单层处理设置 */
+        .wb-box{
+            display: none;
+            /* 设置弹出的层为绝对定位,默认不会影响文档流 */
+            position: absolute;
+        }
+        .wb:hover .wb-box{
+            display: block;
+        }
+        .wb-box li{
+            border: 1px solid #ff8850;
+            width: 104px;
+            height: 31px;
+            line-height: 31px;
+            margin-left: -15px;
+            padding: 0 15px;
+        }
+        .wb-box li:hover, .wb-box li a:hover{
+           background-color: #edeef0;
+            color: #ff8850;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav-main">
+            <!-- 左侧导航 -->
+                <ul class="nav-left-li">
+                    <li><a href="#"> 设为首页</a></li>
+                    <li><a href="#"> 手机新浪网</a></li>
+                    <li><a href="#"> 移动客户端</a></li>
+                </ul>
+            <!-- 右侧导航 -->
+                <ul class="nav-right-li">
+                    <li><a href="#">登陆</a></li>
+                    <li class="wb">
+                        <a href="#">微博</a>
+                        <ul class="wb-box">
+                            <li><a href="#">私信</a></li>
+                            <li><a href="#">评论</a></li>
+                            <li><a href="#">@我</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">博客</a></li>
+                    <li><a href="#">邮箱</a></li>
+                    <li><a href="#">网站导航</a></li>
+                </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>
