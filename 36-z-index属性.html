@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>z-index</title>
+    <style>
+        .a {
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            border: 1px solid purple;
+        }
+
+        .d1 {
+         /* 中间层 */
+            z-index: 100;
+            left: 100px;
+            top: 100px;
+            background-color: #309;
+        }
+
+        .d2 {
+            /* 最高层 */
+            z-index: 200;
+            top: 20px;
+            background-color: #334433;
+        }
+
+        .d3 {
+            /* 最底层 */
+            z-index: 4;
+            background-color: #a08;
+            left: 80px;
+            top: -30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a d1"></div>
+    <div class="a d2"></div>
+    <div class="a d3"></div>
+</body>
+
+</html>
