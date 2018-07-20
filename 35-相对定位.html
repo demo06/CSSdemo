@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>相对定位</title>
     <style>
-        body,div{
+        body,
+        div {
             margin: 0;
             padding: 0;
+        }
+
+        div {
+            border: 1px solid #000;
+        }
+
+        .rl {
+            width: 100px;
+            height: 100px;
+            /* 设置了相对定位之后,标签的CSS就可以设置left,right,top,bottom的CSS的属性 */
+            position: relative;
+
         }
 
         /* 相对于原来的位置进行偏移 */
     </style>
 </head>
+
 <body>
-    <div>
-        我是DIV                                                                                                                                          
+    <div class="rl">
+        我是DIV
     </div>
 </body>
+
 </html>
