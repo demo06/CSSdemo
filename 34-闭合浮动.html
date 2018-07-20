@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>闭合浮动</title>
+    <style>
+        body,
+        div {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            border: 1px solid red;
+        }
+
+        .fl {
+            float: right;
+            width: 100px;
+            height: 100px;
+            background-color: palevioletred;
+        }
+
+        .clearfix::after,
+        .clearfix::before {
+            /* opera浏览器bug */
+            content: "  ";
+            display: table;
+        }
+
+        .clearfix::after {
+            clear: both;
+        }
+        .clearfix{
+            /* 兼容IE6/7 */
+            *zoom: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clearfix">
+        假设有一些文字
+        <div class="fl">浮动的div</div>
+    </div>
+</body>
+
+</html>
