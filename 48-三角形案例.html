@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>三角形案例</title>
+    <style>
+        body,
+        div {
+            margin: 0;padding: 0;
+        }
+        .main{
+            width: 600px;
+            margin: 100px auto;
+        }
+        .btn1{
+            width: 100px;
+            height: 26px;
+            background-color: #90c;
+            border: 1px solid #a3f;
+            line-height: 26px;
+            color: #eee;
+            text-align: center;
+            border-radius: 20px;
+            position: relative;
+        }
+        .btn1::before{
+            /* 伪元素必须要加content属性 */
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: -18px;
+            display: block;
+            width: 0px;
+            height: 0px;
+            border: 9px solid #90c;
+            border-color:transparent transparent  #90c;
+            border-style: dashed dashed solid;
+            
+        }
+
+        .btn2{
+            background-color: goldenrod;
+            width: 100px;
+            height: 40px;
+            margin-top: 30px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 5px;
+            color: #eee;
+            position: relative;
+        }
+        .btn2::before{
+            content: "";
+            position: absolute;
+            border: 10px solid goldenrod;
+            display: block;
+            left: -20px;
+            top: 25%;
+            width: 0;
+            height: 0;
+            border-color: transparent goldenrod transparent transparent;
+            border-style: dashed solid dashed dashed;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="btn1">
+            气泡按钮
+        </div>
+
+        <div class="btn2">
+            气泡按钮2
+        </div>
+
+    </div>
+</body>
+
+</html>

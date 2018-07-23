@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>气泡三角形</title>
+    <style>
+        body,
+        div {
+            margin: 0;
+            padding: 0;
+        }
+
+        .btn {
+            width: 100px;
+            height: 40px;
+            border: 1px solid #ccc;
+            margin: 100px auto;
+
+        }
+
+        .bubble-s {
+            position: relative;
+        }
+
+        .bubble-s::before,
+        .bubble-s::after {
+            content: "";
+            position: absolute;
+            border: 9px solid #ccc;
+            border-color: transparent transparent #ccc;
+            left: 40%;
+            top: -18px;
+            border-style: dashed dashed solid;
+        }
+
+        .bubble-s::after {
+
+            left: 40%;
+            top: -16px;
+            border: 9px solid #fff;
+            border-color: transparent transparent #fff;
+            border-style: dashed dashed solid;
+        }
+
+        ul {
+            list-style: none;
+            text-align: center;
+      
+        }
+        .menu{
+            margin: 0 auto;
+            width: 200px;
+        }
+        .menu li{
+            width: 200px;
+            border: 1px solid #ccc;
+            overflow: hidden;
+        }
+        .menu a {
+            float: left;
+            height: 30px;
+            width: 200px;
+            line-height: 30px;
+            text-decoration: none;
+            color: #3e3e3e;
+        }
+        .menu a:hover{
+            background-color: #c1c1c1;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btn bubble-s"></div>
+    <ul class="menu bubble-s">
+        <li>
+            <a href="#">菜单1</a>
+        </li>
+        <li>
+            <a href="#">菜单2</a>
+        </li>
+        <li>
+            <a href="#">菜单3</a>
+        </li>
+        <li>
+            <a href="#">菜单4</a>
+        </li>
+        <li>
+            <a href="#">菜单5</a>
+        </li>
+    </ul>
+</body>
+
+</html>

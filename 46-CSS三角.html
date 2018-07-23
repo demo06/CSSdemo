@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>三角</title>
+    <style>
+        body,
+        div {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 朝右的三角形 */
+
+        .bd {
+            margin: 100px auto;
+            border: 10px solid red;
+            width: 0;
+            height: 0;
+            border-color: transparent transparent transparent green;
+            /* 兼容ie6等老浏览器 ,去掉黑底*/
+            border-style: dashed dashed dashed solid;
+        }
+
+
+        /* 朝上的三角形 */
+
+        .bd-up {
+            margin: 100px auto;
+            border: 100px solid red;
+            width: 0;
+            height: 0;
+            border-color: transparent transparent gold transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bd"></div>
+    <div class="bd-up"></div>
+</body>
+
+</html>

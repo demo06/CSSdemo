@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>滑动门</title>
+    <style>
+    body,ul,li,div{
+        margin: 0;padding: 0;
+    }
+    ul{
+        list-style: none;
+    }
+    .menu{
+        width: 1080px;
+        margin: 0 auto;
+    }
+    .menu li{
+        float: left;
+        padding-left: 6px;
+        background: url(./img/ldoor.png) no-repeat;
+        margin: 0 -3px;
+    }
+    .menu li a{
+        text-decoration: none;
+        color: #333;
+        height: 35px;
+        /* border: 1px solid red; */
+        float: left;
+        line-height: 35px;
+        padding: 0 30px 0 10px;
+        background: url(./img/rdoor.png) no-repeat right top;
+    }
+    .menu li a:hover{
+        color: green;
+    }
+
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">技术栈</a></li>
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">技术支持</a></li>
+        <li><a href="#">加入我们吧</a></li>
+    </ul>
+</body>
+</html>
