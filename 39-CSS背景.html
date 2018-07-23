@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>背景</title>
+    <style>
+        div {
+
+            height: 400px;
+            width: 400px;
+            border: 1px solid #000;
+        }
+
+        .bg {
+            background-color: #cda;
+            /* setting bg img ,优先级高于背景色*/
+            background-image: url(./img/1.jpg);
+
+        }
+
+        .bg2 {
+            background-image: url(img/tanhao.png);
+            /* 是否重复平铺图片 */
+            /* repeat-x,x轴平铺*/
+            /* repeat-y, Y轴平铺*/
+            /* no-repeat,不平铺 */
+            background-repeat: no-repeat;
+            padding-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+
+    </div>
+    <div class="bg2">samll pic</div>
+</body>
+
+</html>
